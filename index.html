@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mr iPhone</title>
+
+  <!-- Fuente de Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Archivo de estilos -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <img class="logo" src="img/logo.png" alt="Logo de Mr iPhone">
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#resenas">Resenas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="inicio" class="hero">
+      <div class="hero-texto">
+        <h1>Mr iPhone</h1>
+        <p>Venta de iPhone usados y servicio tecnico en Caballito.</p>
+        <a class="boton" href="#productos">Ver productos</a>
+      </div>
+    </section>
+
+    <section id="productos">
+      <h2>Productos</h2>
+      <div class="cards">
+
+        <div class="card">
+          <img src="img/iphone-14.png" alt="iPhone 14 usado">
+          <h3>iPhone 14</h3>
+          <ul>
+            <li>Almacenamiento: 128 GB</li>
+            <li>Bateria: 86%</li>
+            <li>Garantia: 3 meses</li>
+          </ul>
+          <a class="boton" href="" target="_blank">Consultar</a>
+        </div>
+
+        <div class="card">
+          <img src="img/iphone-15-pro.png" alt="iPhone 15 Pro usado">
+          <h3>iPhone 15 Pro</h3>
+          <ul>
+            <li>Almacenamiento: 128 GB</li>
+            <li>Bateria: 91%</li>
+            <li>Garantia: 3 meses</li>
+          </ul>
+          <a class="boton" href="" target="_blank">Consultar</a>
+        </div>
+
+        <div class="card">
+          <img src="img/iphone-15.png" alt="iPhone 15 usado">
+          <h3>iPhone 15</h3>
+          <ul>
+            <li>Almacenamiento: 256 GB</li>
+            <li>Bateria: 100%</li>
+            <li>Garantia: 3 meses</li>
+          </ul>
+          <a class="boton" href="" target="_blank">Consultar</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="resenas">
+      <h2>Resenas</h2>
+      <div class="resenas">
+        <img src="img/local.png" alt="Local de Mr iPhone en Caballito">
+
+        <!-- falta cambiar por resenas reales -->
+        <div class="resena">
+          <p>Excelente atencion. Me asesoraron muy bien y el iPhone estaba tal cual lo describieron.</p>
+          <p class="cliente">Nombre del cliente</p>
+        </div>
+
+        <div class="resena">
+          <p>Muy buena experiencia, respondieron rapido y todo fue muy claro.</p>
+          <p class="cliente">Nombre del cliente</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <div class="contacto">
+
+        <form action="https://formspree.io/f/xvkzkrpb" method="POST">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required>
+
+          <label for="email">Correo electronico</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+          <button class="boton" type="submit">Enviar</button>
+        </form>
+
+        <div class="datos">
+          <p>Direccion: Av. Directorio 1001, Caballito, Buenos Aires</p>
+          <p>WhatsApp: 12345678</p>
+          <iframe src="https://www.google.com/maps?q=Av.+Directorio+1001,+Buenos+Aires,+Argentina&output=embed" title="Mapa"></iframe>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>federi1234@gmail.com </p>
+    <p>Mr iPhone - Av. Directorio 1001, Caballito</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>

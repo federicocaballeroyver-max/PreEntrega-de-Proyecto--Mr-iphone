@@ -1,0 +1,252 @@
+/* ---------- Estilos generales ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #0f1420;
+  color: #e8ecf3;
+  line-height: 1.6;
+}
+
+a {
+  color: #8db4e0;
+}
+
+section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.boton {
+  display: inline-block;
+  background-color: #8db4e0;
+  color: #0f1420;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* ---------- Header y lista de navegacion ---------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: #161c28;
+  border-bottom: 1px solid #2a3448;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: #e8ecf3;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #8db4e0;
+}
+
+/* ---------- Inicio ---------- */
+.hero {
+  max-width: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 70px 40px;
+  background: linear-gradient(to right, #0f1420, #1f2f50);
+}
+
+.hero-texto {
+  width: 450px;
+}
+
+.hero h1 {
+  font-size: 56px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+.hero-img {
+  width: 450px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+  background-color: #161c28;
+}
+
+/* ---------- Productos ---------- */
+.cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+  background-color: #161c28;
+  border: 1px solid #2a3448;
+  border-radius: 12px;
+  padding: 15px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card ul {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+/* ---------- Resenas ---------- */
+.resenas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.resenas img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.resena {
+  background-color: #161c28;
+  border-left: 4px solid #8db4e0;
+  border-radius: 12px;
+  padding: 25px;
+}
+
+.cliente {
+  margin-top: 15px;
+  color: #9aa5b8;
+}
+
+/* ---------- Contacto ---------- */
+.contacto {
+  display: flex;
+  gap: 40px;
+}
+
+form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #2a3448;
+  border-radius: 8px;
+  background-color: #161c28;
+  color: #e8ecf3;
+  font-family: "Poppins", sans-serif;
+}
+
+form button {
+  margin-top: 10px;
+  align-self: flex-start;
+}
+
+.datos {
+  flex: 1;
+}
+
+.datos p {
+  margin-bottom: 10px;
+}
+
+iframe {
+  width: 100%;
+  height: 250px;
+  border: none;
+  border-radius: 12px;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  padding: 25px;
+  background-color: #161c28;
+  border-top: 1px solid #2a3448;
+}
+
+/* ---------- Media Queries ---------- */
+@media (max-width: 800px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-texto,
+  .hero-img {
+    width: 100%;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .resenas {
+    grid-template-columns: 1fr;
+  }
+
+  .contacto {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+}
